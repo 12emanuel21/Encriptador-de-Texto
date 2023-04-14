@@ -1,0 +1,406 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+   
+}
+.contenedor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f3f5fc;
+  }
+.section1{
+    display: flex;
+
+}
+.imagen {
+width: 10%;
+height: 100vh;
+
+}
+.imagen img{
+    position: relative;
+    left: 2rem;
+    top: 2rem; 
+    position: absolute;
+}
+.cuerpo{
+width: 58%;
+height: 100vh;
+
+display: flex;
+justify-content:center;
+align-items: start;
+}
+.cuerpo textarea{
+    position: relative;
+    width: 80%;
+    height: 60%;
+    left: 0%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: #f3f5fc;
+    color: #0A3871;
+    outline: none;
+
+}
+.cuerpo textarea::placeholder{
+    color: #0A3871;
+    padding: 0 1rem;
+}
+.btn{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+ 
+}
+.encriptar{
+ /*    display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    padding: 24px;
+    gap: 8px;
+    
+    width: 328px;
+    height: 67px;
+   border: none;
+   color: #FFFFFF;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+    
+    background: #0A3871;
+    border-radius: 24px;
+    
+    margin: 3rem 1rem;
+    cursor: pointer;
+  
+} .desencriptar{
+ /*    display: flex;
+flex-direction: row;
+align-items: flex-start; */
+padding: 24px;
+gap: 8px;
+color: #0A3871;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+margin: 3rem 1rem;
+width: 328px;
+height: 67px;
+cursor: pointer;
+background: #D8DFE8;
+
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+}
+
+
+.respuesta{
+width: 30%;
+height: 100vh;
+display: flex;
+justify-content:flex-end;
+align-items: center;
+}
+.cilindro{
+    width: 80%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.20);
+border-radius: 32px;
+}
+.cilindro h3{
+    width: 336px;
+    height: 58px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    
+    text-align: center;
+}
+.cilindro p{
+    width: 336px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+}
+.cilindro img{
+    width: 80%;
+
+}
+.copiar{
+    /*    display: flex;
+   flex-direction: row;
+   align-items: flex-start; */
+   padding: 24px;
+   gap: 8px;
+   color: #0A3871;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   margin: 1.5rem 0.5rem;
+   width: 228px;
+   height: 37px;
+   cursor: pointer;
+   background: #D8DFE8;
+   display: none;
+   
+   border: 1px solid #0A3871;
+   border-radius: 24px;
+   }
+   
+.adver{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 28rem 8rem 0;
+}
+.adver img{
+   transform: translateY(10px);
+   color: #495057;
+ width: 20px;
+ height: 20px;
+}
+.adver p{
+    width: 205px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+@media (max-Width:1024px){
+    .cuerpo textarea{
+        left: 60px;
+    }
+} 
+
+@media (max-Width:820px) {
+  
+    .contenedor{
+        width:103vw ;
+        background: #f3f5fc;
+        overflow-x: hidden;
+    }
+    
+    .section1{
+        flex-direction: column;
+    }
+    .cuerpo textarea{
+        position: absolute;
+        width: 99%;
+        height: 60%;
+    left: 0px;
+    top: 200px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+color: #0A3871;
+
+    }
+    .cuerpo textarea::placeholder{
+        color: #0A3871;
+        padding: 0 1rem;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        
+    }
+   .imagen img{
+    position: absolute;
+left: 0.21%;
+right: 90.74%;
+top: 6.25%;
+bottom: 89.8%;
+
+
+   }
+   .adver{
+    left: 10px;
+    top: 600px;
+   }
+   .adver p{
+    font-size: 12px;
+   }
+   .btn{
+    left: 5px;
+   top: 600px;
+   }
+   .encriptar{
+    padding: 24px;
+gap: 8px;
+
+width: 332px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+
+background: #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+   }
+   .desencriptar{
+    padding: 24px;
+    gap: 8px;
+    
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+   }
+   .cilindro img{
+    display: none;
+
+   }
+   .cilindro{
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    left: 20px;
+    
+    top: 750px;
+   
+   }
+   .cilindro h3{
+    width: 100%;
+    margin: 0;
+   }
+   .cilindro p{
+    width: 100%;
+    margin: 0;
+   }
+   
+}
+
+@media (max-width:414px) {
+    body{
+        width:375px ;
+        background: #E5E5E5;
+        height: 100vh;
+        overflow-x: hidden;
+       
+    }
+    .section1{
+        flex-direction: column;
+    }
+
+    .cuerpo textarea{
+        left: 15px;
+        top: 100px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        left: 10px;
+    transform: translateY(-180px);
+    }
+    .encriptar{
+        margin-bottom: 10px;
+        height: 20px;
+        width: 328px;
+        
+    }
+    .desencriptar{
+        margin-top: 10px;
+        height: 20px;
+    }
+    .adver{
+        left: 20px;
+        top: 420px;
+    }
+    .imagen img{
+        position: absolute;
+        left: -25px;
+    }
+
+    .cilindro img{
+        display: none;
+    
+       }
+       .cilindro{
+        position: absolute;
+        width: 90%;
+        height: 10rem;
+        left: 20px;
+        top: 680px;
+       
+       }
+       .cilindro h3{
+        width: 100%;
+        margin: 0;
+       }
+       .cilindro p{
+        width: 100%;
+        margin: 0;
+       }
+
+}

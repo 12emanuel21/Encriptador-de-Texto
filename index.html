@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="Logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Encriptar</title>
+</head>
+<body>
+    <div class="contenedor">
+        <section class="section1">
+            <div class="imagen"><img src="Logo.png" alt="logo"></div>
+            <div class="cuerpo">
+                <textarea name="texto" id="texto"class="texto" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="adver"><img src="Vector.png" alt="icon"><p>Solo letras minúsculas y sin acentos</p></div>
+                <div class="btn">
+                    <button class="encriptar" type="button" onclick="encriptar()"> Encriptar </button>
+                    <button class="desencriptar" type="button" onclick="desencriptar()"> Desencriptar </button>
+                  
+                   </div>
+            </div>
+            <div class="respuesta">
+                <div class="cilindro">
+                    <img src="Muñeco.png" alt="muñeco"id="muñeco">
+                    <h3 id="h3" >Ningún mensaje fue encontrado</h3>
+                    <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="copiar"id="copiar" type="button" onclick="copiar()"> copiar </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+          function copiar(){
+   var copycifrado=document.getElementById('texto');
+   copycifrado.select();
+   copycifrado.setSelectionRange(0,9999);
+     document.execCommand("copy");  
+    
+}
+    </script>
+</body>
+
+
+<script src="javascript.js"></script>
+</html>
